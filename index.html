@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Amigo - Campanha de Adoção</title>
+    <style>
+        /* --- ESTILOS GERAIS --- */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* --- CABEÇALHO/BANNER --- */
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1200x400?text=Adote+um+Amigo');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin-top: 0;
+            font-size: 3em;
+            color: white; /* Sobrescreve o estilo h1 geral */
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .btn-adotar {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-adotar:hover {
+            background-color: #c0392b;
+        }
+
+        /* --- SEÇÃO SOBRE --- */
+        #sobre {
+            background-color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #sobre p {
+            max-width: 700px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        /* --- GALERIA DE ANIMAIS --- */
+        #animais {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .galeria-animais {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .pet-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .pet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .pet-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .pet-info {
+            padding: 15px;
+        }
+
+        .pet-info h3 {
+            margin-top: 0;
+            color: #e74c3c;
+        }
+
+        .pet-info p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+
+        /* --- RODAPÉ --- */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Adote um Amigo, Transforme uma Vida!</h1>
+            <p>Dê uma segunda chance a cães e gatos que esperam por um lar cheio de amor.</p>
+            <a href="#animais" class="btn-adotar">Conheça Nossos Pets</a>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Nossa Missão</h2>
+            <p>Somos dedicados a resgatar, reabilitar e encontrar lares permanentes e amorosos para animais abandonados. Acreditamos que todo animal merece carinho, segurança e uma família.</p>
+        </div>
+    </section>
+
+    <section id="animais">
+        <div class="container">
+            <h2>Nossos Amigos para Adoção</h2>
+            <div class="galeria-animais">
+                
+                <div class="pet-card">
+                    <img src="https://via.placeholder.com/300x200?text=Doguinho+Rex" alt="Foto do cão Rex">
+                    <div class="pet-info">
+                        <h3>Rex</h3>
+                        <p>Idade: <span class="tag">2 anos</span></p>
+                        <p>Porte: <span class="tag">Médio</span></p>
+                        <p>Temperamento: Brincalhão e muito dócil. Adora crianças e passeios longos.</p>
+                        <a href="#" class="btn-adotar" style="width: 100%; text-align: center; margin-top: 10px;">Adotar Rex</a>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <img src="https://via.placeholder.com/300x200?text=Gatinha+Mimi" alt="Foto da gata Mimi">
+                    <div class="pet-info">
+                        <h3>Mimi</h3>
+                        <p>Idade: <span class="tag">1 ano</span></p>
+                        <p>Tipo: <span class="tag">Gata</span></p>
+                        <p>Temperamento: Calma e independente. Perfeita para apartamentos, adora cochilar no sol.</p>
+                        <a href="#" class="btn-adotar" style="width: 100%; text-align: center; margin-top: 10px;">Adotar Mimi</a>
+                    </div>
+                </div>
+
+                <div class="pet-card">
+                    <img src="https://via.placeholder.com/300x200?text=Cachorro+Pingo" alt="Foto do cão Pingo">
+                    <div class="pet-info">
+                        <h3>Pingo</h3>
+                        <p>Idade: <span class="tag">6 meses</span></p>
+                        <p>Porte: <span class="tag">Pequeno</span></p>
+                        <p>Temperamento: Um filhote cheio de energia! Requer treinamento e muito amor para crescer feliz.</p>
+                        <a href="#" class="btn-adotar" style="width: 100%; text-align: center; margin-top: 10px;">Adotar Pingo</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Adote um Amigo. Adoção Responsável é um Ato de Amor.</p>
+    </footer>
+
+</body>
+</html>
